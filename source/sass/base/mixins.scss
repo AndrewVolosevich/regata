@@ -1,0 +1,50 @@
+/* Mixins */
+
+@mixin text-placeholder {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: lighter;
+  color: $semi-light-blue;
+}
+
+@mixin visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+@mixin reset-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin reset-fieldset {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+  border: none;
+}
+
+@mixin reset-text {
+  margin: 0;
+}
+
+@mixin reset-button {
+  padding: 0;
+
+  border-width: 0;
+  border-style: none;
+  border-color: none;
+  border-image: none;
+  background-color: transparent;
+  color: inherit;
+}

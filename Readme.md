@@ -1,7 +1,6 @@
-# Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
+# Личный проект «Регата» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
-* Студент: [Андрей Волосевич](https://up.htmlacademy.ru/adaptive/18/user/1072175).
-* Наставник: [Ольга Вадясова](https://htmlacademy.ru/profile/id46068).
+* Создатель: [Андрей Волосевич](https://up.htmlacademy.ru/adaptive/18/user/1072175).
 
 ---
 
@@ -52,7 +51,7 @@ git clone SSH-адрес_вашего_форка
 
 <a href="https://htmlacademy.ru/intensive/adaptive"><img align="left" width="50" height="50" alt="HTML Academy" src="https://up.htmlacademy.ru/static/img/intensive/adaptive/logo-for-github-2.png"></a>
 
-Репозиторий создан для обучения на профессиональном онлайн‑курсе «[HTML и CSS, уровень 2](https://htmlacademy.ru/intensive/adaptive)» от [HTML Academy](https://htmlacademy.ru).
+
 
 [travis-image]: https://travis-ci.com/htmlacademy-adaptive/1072175-pink-18.svg?branch=master
 [travis-url]: https://travis-ci.com/htmlacademy-adaptive/1072175-pink-18

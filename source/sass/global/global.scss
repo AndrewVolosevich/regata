@@ -1,0 +1,28 @@
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  text-decoration: none;
+  font-style: none;
+  color: $dark-violet;
+
+  background-color: $white;
+}
+
+a {
+  text-decoration: none;
+}
