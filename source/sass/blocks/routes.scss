@@ -1,0 +1,74 @@
+.routes {
+  width: 100%;
+  padding: 40px 0;
+
+  background: $dark-violet;
+  background-image: url("../img/bg-img/section-background-image-noise.png");
+  background-position-x: 50%;
+}
+
+.routes__header {
+  @include reset-text();
+  margin-bottom: 20px;
+
+  font-size: 40px;
+  font-weight: normal;
+  color: $white;
+  text-transform: uppercase;
+}
+
+.routes__list {
+  @include reset-list();
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.routes__item {
+  position: relative;
+
+  width: 23%;
+
+  a {
+    display: block;
+  }
+}
+
+.routes__img-wrapper {
+  width: 100%;
+
+  img {
+    width: 100%;
+  }
+}
+
+.routes__content-wrapper {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.routes__title {
+  @include reset-text();
+
+  font-size: 30px;
+  font-weight: normal;
+  color: $white;
+  text-transform: none;
+}
+
+.routes__text {
+  @include reset-text();
+
+  font-size: 17px;
+  font-weight: normal;
+  color: $white;
+  text-transform: none;
+}

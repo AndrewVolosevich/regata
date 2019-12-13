@@ -1,0 +1,52 @@
+.intro {
+  position: relative;
+}
+
+.intro__list {
+  @include reset-list();
+}
+
+
+.intro__item {
+  width: 100%;
+  height: 400px;
+
+  & img {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.intro__content {
+  position: absolute;
+  top: 50%;
+  left: 15%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 400px;
+  height: 150px;
+  padding-left: 10px;
+  text-align: left;
+
+  background-color: transparentize($black, 0.4);
+
+  transform: translateY(-50%);
+}
+
+.intro__title {
+  @include reset-text();
+  display: block;
+  padding: 0 10px;
+
+  color: $white;
+  font-weight: normal;
+  font-size: 40px;
+  text-align: left;
+}
+
+.intro__button {
+  margin-top: auto;
+}

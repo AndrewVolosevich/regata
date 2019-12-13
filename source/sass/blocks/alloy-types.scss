@@ -1,0 +1,49 @@
+.alloy-types {
+  width: 100%;
+  padding: 40px 0;
+
+  background-color: $dark-green;
+  background: url("../img/bg-img/alloy-types--bg.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 10%;
+  background-size: cover;
+}
+
+.alloy-types__header {
+  @include reset-text();
+  margin-bottom: 20px;
+
+  font-size: 40px;
+  font-weight: normal;
+  color: $white;
+  text-transform: uppercase;
+}
+
+.alloy-types__list {
+  @include reset-list();
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.alloy-types__item {
+  width: 24%;
+}
+
+.alloy-types__title {
+  @include reset-text();
+
+  color: $white;
+  font-weight: normal;
+  font-size: 30px;
+}
+
+.alloy-types__subtitle {
+  @include reset-text();
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+  color: $white;
+  font-weight: normal;
+  font-size: 17px;
+}

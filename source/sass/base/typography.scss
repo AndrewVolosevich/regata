@@ -1,23 +1,27 @@
 @font-face {
-  font-family: "Open Sans";
-  src: url("../fonts/opensans.woff") format("woff"),
-    url("../fonts/opensans.woff2") format("woff2");
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Open Sans";
-  src: url("../fonts/opensansbold.woff") format("woff"),
-    url("../fonts/opensansbold.woff2") format("woff2");
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Open Sans";
-  src: url("../fonts/opensanslight.woff") format("woff"),
-    url("../fonts/opensanslight.woff2") format("woff2");
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Light.woff") format("woff");
   font-weight: lighter;
   font-style: normal;
 }

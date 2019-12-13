@@ -1,0 +1,27 @@
+.page-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+
+  width: 100%;
+
+  color: $white;
+
+  background-color: transparentize($black, 0.1);
+}
+
+.page-header__inner-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-header__logo {
+  display: block;
+  padding: 15px 10px;
+
+  color: $white;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+}

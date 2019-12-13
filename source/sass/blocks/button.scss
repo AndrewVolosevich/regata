@@ -1,0 +1,15 @@
+.button {
+  display: inline-block;
+  vertical-align: top;
+  padding: 0 20px;
+  width: auto;
+
+
+  color: $white;
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: normal;
+  line-height: 28px;
+
+  background-color: $orange;
+}

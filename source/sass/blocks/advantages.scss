@@ -1,0 +1,62 @@
+.advantages {
+  width: 100%;
+  padding: 40px 0;
+
+  background-color: $white;
+}
+
+.advantages__header {
+  @include reset-text();
+  margin-bottom: 20px;
+
+  font-size: 40px;
+  font-weight: normal;
+  color: $white;
+  text-transform: uppercase;
+}
+
+.advantages__list {
+  @include reset-list();
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.advantages__item {
+  position: relative;
+
+  width: 32%;
+  padding-left: 80px;
+  margin-bottom: 40px;
+
+  text-align: left;
+}
+
+.advantages__title {
+  @include reset-text();
+
+  color: $dark-violet;
+  font-weight: normal;
+  font-size: 30px;
+
+  &::before {
+    content: url("../img/icons-png/icon-check.png");
+    position: absolute;
+    top: 0;
+    left: 10px;
+
+    display: block;
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.advantages__text {
+  @include reset-text();
+  margin-top: 10px;
+
+  color: $dark-violet;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 20px;
+}

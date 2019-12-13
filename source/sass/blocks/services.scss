@@ -1,0 +1,48 @@
+.services {
+  width: 100%;
+  padding: 40px 0;
+
+  background-color: $white;
+}
+
+.services__header {
+  @include reset-text();
+  margin-bottom: 20px;
+
+  font-size: 40px;
+  font-weight: normal;
+  color: $dark-violet;
+  text-transform: uppercase;
+}
+
+.services__list {
+  @include reset-list();
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.services__item {
+  width: 23%;
+}
+
+.services__img-wrapper {
+  width: 100%;
+
+  a {
+    display: block;
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+.services__title {
+  margin-top: 10px;
+
+  font-size: 25px;
+  font-weight: 500;
+  color: $dark-violet;
+  text-transform: uppercase;
+}
