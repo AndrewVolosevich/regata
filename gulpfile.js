@@ -34,6 +34,21 @@ gulp.task("css", function () {
     .pipe(server.stream());
 });
 
+gulp.task("css1", function () {
+  return gulp.src("source/sass/style.scss")
+    .pipe(plumber())
+    .pipe(sourcemap.init())
+    .pipe(sass())
+    .pipe(postcss([
+      autoprefixer()
+    ]))
+    // .pipe(csso())
+    // .pipe(rename("style.min.css"))
+    .pipe(sourcemap.write("."))
+    .pipe(gulp.dest("build/css"))
+    .pipe(server.stream());
+});
+
 
 gulp.task("images", function () {
   return gulp.src("source/img/**/*.{png,svg,jpg}")
@@ -69,7 +84,7 @@ gulp.task("html", function () {
 });
 
 gulp.task("js", function() {
-  return gulp.src(["source/js/*.js", "!source/js/**/*.min.js"])
+  return gulp.src(["source/js/*.js", "!source/js/**/*.min.js", "!source/js/slick-slider.js"])
     .pipe(sourcemap.init())
     .pipe(concat('main.min.js'))
     .pipe(uglify())
@@ -84,7 +99,8 @@ gulp.task("copy", function () {
     "source/img/**",
     "source/*.ico",
     "source/js/libs/*.min.js",
-    "source/js/*.js"
+    "source/js/*.js",
+    "source/css/libs/*.css"
   ], {
     base: "source"
   })

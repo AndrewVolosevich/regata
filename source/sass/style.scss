@@ -1,4 +1,5 @@
 @import "libs/normalize.scss";
+
 /* baze */
 @import "base/typography.scss";
 @import "base/variables.scss";
@@ -8,13 +9,23 @@
 @import "global/visually-hidden.scss";
 @import "global/container.scss";
 @import "global/page-header.scss";
+@import "global/page-footer.scss";
 /* blocks */
 @import "blocks/button.scss";
+@import "blocks/toggles.scss";
 @import "blocks/site-nav.scss";
 @import "blocks/main-nav.scss";
 
 @import "blocks/intro.scss";
+@import "blocks/slider.scss";
 @import "blocks/services.scss";
 @import "blocks/alloy-types.scss";
 @import "blocks/advantages.scss";
 @import "blocks/routes.scss";
+@import "blocks/routes.scss";
+@import "blocks/request.scss";
+@import "blocks/rent.scss";
+@import "blocks/social.scss";
+@import "blocks/copyright.scss";
+@import "blocks/intro-model.scss";
+@import "blocks/advise.scss";

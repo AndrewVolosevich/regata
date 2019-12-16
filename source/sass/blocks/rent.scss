@@ -1,0 +1,83 @@
+.rent {
+  width: 100%;
+  padding: 40px 0 60px;
+
+  background-color: $white;
+}
+
+.rent__inner-wrapper {
+  position: relative;
+}
+
+.rent__header {
+  @include reset-text();
+  margin-bottom: 40px;
+
+  font-size: 40px;
+  font-weight: normal;
+  color: $dark-violet;
+  text-transform: uppercase;
+}
+
+.rent__list {
+  @include reset-list();
+}
+
+.rent__item {
+  width: 20%;
+
+  a {
+    display: block;
+    height: 100%;
+  }
+}
+
+.rent__img-wrapper {
+  width: 100%;
+  height: 200px;
+
+  img {
+    width: 100%;
+  }
+}
+
+.rent__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 90%;
+  flex-grow: 1;
+  margin: 0 auto;
+}
+
+.rent__title {
+  @include reset-text();
+  margin-top: 15px;
+  margin-bottom: 20px;
+  width: 100%;
+  min-height: 60px;
+
+  font-size: 22px;
+  font-weight: normal;
+  color: $dark-violet;
+  text-transform: none;
+  overflow-x: hidden;
+}
+
+.rent__subtitle {
+  @include reset-text();
+
+  font-size: 15px;
+  font-weight: normal;
+  color: $dark-violet;
+  text-transform: none;
+}
+
+.rent__toggles {
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+
+  transform: translateX(-50%);
+}

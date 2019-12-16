@@ -1,0 +1,30 @@
+.request {
+  width: 100%;
+  padding: 40px 0;
+
+  background-color: $orange;
+  background-image: url("../img/bg-img/request--bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.request__inner-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  p{
+    @include reset-list();
+  }
+}
+
+.request__header {
+  @include reset-text();
+  margin-bottom: 40px;
+
+  font-size: 40px;
+  font-weight: normal;
+  color: $dark-violet;
+  text-transform: uppercase;
+}

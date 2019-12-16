@@ -1,0 +1,29 @@
+.intro-model {
+  width: 100%;
+  padding: 70px 0;
+
+  background-color: $dark-green;
+  background: url("../img/bg-img/alloy-types--bg.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 10%;
+  background-size: cover;
+}
+
+.intro-model__title {
+  @include reset-text();
+  margin-bottom: 20px;
+
+  color: $white;
+  font-size: 60px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.intro-model__text {
+  @include reset-text();
+
+  color: $white;
+  font-size: 24px;
+  font-weight: normal;
+  text-transform: none;
+}

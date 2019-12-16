@@ -1,4 +1,6 @@
 .button {
+  position: relative;
+
   display: inline-block;
   vertical-align: top;
   padding: 0 20px;
@@ -12,4 +14,10 @@
   line-height: 28px;
 
   background-color: $orange;
+
+  transition: all ease-in-out 0.3s;
+
+  &:hover {
+    background-color: $dark-orange;
+  }
 }

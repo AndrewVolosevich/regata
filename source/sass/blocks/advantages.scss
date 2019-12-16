@@ -11,7 +11,7 @@
 
   font-size: 40px;
   font-weight: normal;
-  color: $white;
+  color: $dark-violet;
   text-transform: uppercase;
 }
 
@@ -30,6 +30,16 @@
   margin-bottom: 40px;
 
   text-align: left;
+
+  & img {
+    position: absolute;
+    top: 0;
+    left: 10px;
+
+    display: block;
+    width: 50px;
+    height: 50px;
+  }
 }
 
 .advantages__title {
@@ -38,6 +48,7 @@
   color: $dark-violet;
   font-weight: normal;
   font-size: 30px;
+  text-transform: uppercase;
 
   &::before {
     content: url("../img/icons-png/icon-check.png");
