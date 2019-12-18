@@ -2,14 +2,47 @@
   color: $white;
   font-size: 17px;
   font-weight: normal;
+
+  p {
+    @include reset-text();
+    margin: 10px 0;
+  }
 }
 
 .copyright__number {
   display: block;
-  padding: 10px 10px 10px 10px;
+  padding: 10px 10px 10px 0;
 
   color: $orange;
   font-weight: bold;
   font-size: 19px;
   text-transform: uppercase;
+
+  transition: all ease-in-out 0.3s;
+
+  &:hover {
+    text-shadow: 0 1px 2px;
+  }
+}
+
+@media (max-width: $large-width) {
+  .copyright {
+    width: 48%;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .copyright {
+    width: 100%;
+
+    text-align-last: center;
+  }
+
+  .copyright__content {
+    p {
+      font-size: 15px;
+
+      margin: 5px 0;
+    }
+  }
 }

@@ -1,0 +1,50 @@
+.bottom-nav__list {
+  @include reset-list();
+
+  a {
+    position: relative;
+
+    padding: 5px 0;
+
+    color: transparentize($white, 0.2);
+    font-size: 17px;
+    font-weight: normal;
+
+    transition: all ease-in-out 0.3s;
+
+    &:hover {
+      color: $white;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: -40px;
+
+      display: block;
+      width: 6px;
+      height: 6px;
+
+      background-color: transparent;
+      border-radius: 50%;
+
+      transform: translateY(-50%);
+      transition: all ease-in-out 0.3s;
+    }
+
+    &:hover {
+      transform: scale(0.8);
+
+      &::before {
+        background-color: $white;
+
+        left: -13px;
+      }
+    }
+  }
+}
+
+.bottom-nav__item {
+  margin: 10px 0;
+}

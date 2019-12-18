@@ -2,19 +2,19 @@
   width: 100%;
   padding: 40px 0;
 
-  background-color: $dark-green;
+  background-color: $dark-gray;
   background: url("../img/bg-img/alloy-types--bg.jpg");
   background-repeat: no-repeat;
-  background-position: 50% 10%;
+  background-position: 50% 100%;
   background-size: cover;
 }
 
 .alloy-types__header {
   @include reset-text();
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 
   font-size: 40px;
-  font-weight: normal;
+  font-weight: bold;
   color: $white;
   text-transform: uppercase;
 }
@@ -46,4 +46,46 @@
   color: $white;
   font-weight: normal;
   font-size: 17px;
+}
+
+
+@media (max-width: $desktop-width) {
+
+
+}
+
+
+@media (max-width: $large-width) {
+  .alloy-types {
+    width: 100%;
+    padding: 40px 0 20px;
+  }
+
+  .alloy-types__header {
+    font-size: 30px;
+  }
+
+  .alloy-types__item {
+    width: 47%;
+    margin-bottom: 20px;
+
+  }
+
+  .alloy-types__title {
+    @include reset-text();
+
+    color: $white;
+    font-weight: normal;
+    font-size: 30px;
+  }
+
+  .alloy-types__subtitle {
+    @include reset-text();
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    color: $white;
+    font-weight: normal;
+    font-size: 17px;
+  }
 }

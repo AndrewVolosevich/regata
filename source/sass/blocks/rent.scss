@@ -11,7 +11,7 @@
 
 .rent__header {
   @include reset-text();
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 
   font-size: 40px;
   font-weight: normal;
@@ -24,7 +24,7 @@
 }
 
 .rent__item {
-  width: 20%;
+  width: 290px;
 
   a {
     display: block;
@@ -34,10 +34,11 @@
 
 .rent__img-wrapper {
   width: 100%;
-  height: 200px;
+  height: 290px;
 
   img {
     width: 100%;
+    height: 100%;
   }
 }
 
@@ -53,16 +54,16 @@
 
 .rent__title {
   @include reset-text();
-  margin-top: 15px;
-  margin-bottom: 20px;
+  margin-top: 10px;
+  margin-bottom: 15px;
   width: 100%;
-  min-height: 60px;
+  min-height: 70px;
 
   font-size: 22px;
   font-weight: normal;
   color: $dark-violet;
   text-transform: none;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .rent__subtitle {
@@ -80,4 +81,42 @@
   left: 50%;
 
   transform: translateX(-50%);
+}
+
+
+
+@media (max-width: $desktop-width) {
+  .rent__img-wrapper {
+    height: 230px;
+  }
+
+}
+
+
+@media (max-width: $large-width) {
+  .rent__img-wrapper {
+    height: 150px;
+  }
+
+
+.rent__title {
+  margin-top: 5px;
+  margin-bottom: 5px;
+
+  font-size: 18px;
+  font-weight: normal;
+  color: $dark-violet;
+  text-transform: none;
+  overflow: hidden;
+}
+
+.rent__subtitle {
+  width: 80%;
+  margin: 0 auto;
+
+  font-size: 15px;
+  font-weight: normal;
+  color: $dark-violet;
+  text-transform: none;
+}
 }

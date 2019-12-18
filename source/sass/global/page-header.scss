@@ -12,8 +12,15 @@
 }
 
 .page-header__inner-wrapper {
+  position: relative;
+
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+.page-header__toggle {
+  display: none;
 }
 
 .page-header__logo {
@@ -29,5 +36,91 @@
 
   &:hover {
     color: $orange;
+  }
+}
+
+@media (max-width: $desktop-width) {
+
+}
+
+
+@media (max-width: $large-width) {
+  .page-header__toggle {
+    @include reset-button();
+    display: block;
+    width: 50px;
+    height: 30px;
+
+    outline: none;
+
+    &--active {
+      .page-header__toggle-line {
+        background-color: transparent;
+
+        &::before {
+          transform-origin: 0% 0%;
+          transform: rotate(45deg);
+        }
+
+        &::after {
+          transform-origin: 0% 100%;
+          transform: rotate(-45deg);
+        }
+      }
+    }
+
+    &.page-header__toggle--active:hover {
+      .page-header__toggle-line {
+        background-color: transparent;
+      }
+    }
+
+    &:hover .page-header__toggle-line,
+    &:hover .page-header__toggle-line::before,
+    &:hover .page-header__toggle-line::after {
+      background-color: $orange;
+    }
+  }
+
+  .page-header__toggle-line {
+    position: relative;
+
+    display: block;
+    width: 30px;
+    height: 4px;
+
+    background-color: $white;
+    cursor: pointer;
+
+    transition: all ease-in-out 0.5s;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: -8px;
+
+      display: block;
+      width: 30px;
+      height: 4px;
+
+      background-color: $white;
+
+      transition: all ease-in-out 0.5s;
+    }
+
+    &::after {
+      top: 8px;
+    }
+  }
+
+  .page-header__toggle--active .page-header__toggle-line {
+    &::before {
+      top: -12px;
+    }
+
+    &::after {
+      top: 8px;
+    }
   }
 }

@@ -3,7 +3,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   width: 700px;
 }
 
@@ -30,6 +29,7 @@
       position: absolute;
       bottom: 0;
       left: 0;
+      z-index: 10;
 
       display: block;
       width: 1px;
@@ -39,7 +39,6 @@
 
       transition: all ease-in-out 0.3s;
     }
-
 
     &:hover {
       color: $white;
@@ -58,11 +57,12 @@
   @include reset-list();
   position: absolute;
   left: 50%;
-  top: 115%;
+  top: 45px;
   z-index: 5;
 
   width: 210px;
   margin-left: -105px;
+  display: block;
 
   background-color: transparentize($black, 0.1);
   visibility: hidden;
@@ -117,4 +117,78 @@
   visibility: visible;
   opacity: 1;
   transform: perspective(600px) rotateX(0deg);
+}
+
+@media (max-width: $desktop-width) {
+  .site-nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 700px;
+  }
+
+  .site-nav__item {
+    a {
+      padding: 5px;
+      width: 100%;
+
+      text-align: center;
+      color: transparentize($white, 0.2);
+      font-size: 15px;
+      font-weight: normal;
+      text-transform: uppercase;
+    }
+  }
+
+  .site-subnav {
+    top: 40px;
+  }
+
+}
+
+@media (max-width: $large-width) {
+  .site-nav {
+    flex-direction: column;
+    width: 250px;
+  }
+
+  .site-nav__item {
+    width: 100%;
+    text-align-last: left;
+    padding-left: 15px;
+    margin-bottom: 5px;
+  }
+
+  .site-subnav {
+    @include reset-list();
+    position: static;
+
+    visibility: visible;
+    opacity: 1;
+
+    left: 0;
+    top: 0;
+
+    background-color: transparent;
+
+    transform: perspective(600px) rotateY(0deg);
+
+    & li {
+      padding-left: 0;
+    }
+
+    a {
+      text-align: left;
+      &::before {
+        left: -50px;
+      }
+
+      &:hover {
+        &::before {
+
+          left: -10px;
+        }
+      }
+    }
+  }
 }

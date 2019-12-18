@@ -2,17 +2,15 @@
   width: 100%;
   padding: 40px 0;
 
-  background: $dark-violet;
-  background-image: url("../img/bg-img/section-background-image-noise.png");
-  background-position-x: 50%;
+  background: $dark-gray;
 }
 
 .routes__header {
   @include reset-text();
   margin-bottom: 20px;
 
-  font-size: 40px;
-  font-weight: normal;
+  font-size: 35px;
+  font-weight: bold;
   color: $white;
   text-transform: uppercase;
 }
@@ -28,6 +26,10 @@
   position: relative;
 
   width: 23%;
+
+  &:hover .routes__content-wrapper {
+    opacity: 1;
+  }
 }
 
 .routes__link {
@@ -41,9 +43,14 @@
 
 .routes__img-wrapper {
   width: 100%;
+  height: 240px;
+
+  background-color: $black;
+  overflow: hidden;
 
   img {
     width: 100%;
+    height: 100%;
 
     transition: all ease-in-out 0.6s;
   }
@@ -60,10 +67,15 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
+
+  opacity: 0;
+
+  transition: all ease-in-out 0.6s;
 }
 
 .routes__title {
   @include reset-text();
+  margin-bottom: 20px;
 
   font-size: 30px;
   font-weight: normal;
@@ -73,9 +85,51 @@
 
 .routes__text {
   @include reset-text();
+  position: relative;
 
   font-size: 17px;
   font-weight: normal;
   color: $white;
   text-transform: none;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -12px;
+    left: 50%;
+
+    display: block;
+    width: 40px;
+    height: 3px;
+
+    background-color: $white;
+
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: $desktop-width) {
+  .routes__img-wrapper {
+    height: 200px;
+  }
+
+
+}
+
+@media (max-width: $large-width) {
+  .routes {
+    padding: 40px 0 20px;
+  }
+
+  .routes__item {
+    width: 47%;
+    margin-bottom: 20px;
+  }
+
+  .routes__img-wrapper {
+    height: 200px;
+    width: 240px;
+    margin: 0 auto;
+  }
+
 }

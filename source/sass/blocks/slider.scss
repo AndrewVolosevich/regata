@@ -165,6 +165,8 @@
 .slick-dots {
   .slick-active button{
     background-color: $orange;
+
+    outline: none;
   }
 
   @include reset-list();
