@@ -1,0 +1,269 @@
+.card__wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 60px 0 200px;
+}
+
+.card-images {
+  width: 49%;
+}
+
+.card-info {
+  width: 49%;
+}
+
+.card-img__wrapper {
+  position: relative;
+  width: 580px;
+  height: 400px;
+
+  img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translateX(-50%) translateY(-50%);
+
+    width: 70%;
+  }
+}
+
+.card-info__radio {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+
+  ul {
+    @include reset-list();
+      display: flex;
+      justify-content: space-around;
+  }
+
+  input {
+      display: none;
+  }
+  label {
+    position: relative;
+
+      display: block;
+      font-size: 17px;
+      font-weight: 600;
+      text-transform: uppercase;
+
+      color: transparentize($dark-violet, 0.2);
+      background-color: transparent;
+      padding: 10px;
+
+      transition: all 0.4s ease-in-out;
+      cursor: pointer;
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+
+        display: block;
+        width: 100%;
+        height: 2px;
+
+        background-color: $orange;
+        opacity: 0;
+
+        transition: all ease-in-out 0.5s;
+      }
+
+      &:hover {
+          color: $dark-violet;
+          text-shadow: 1px 0 2px $dark-violet;
+          }
+      }
+  input[type=radio]:checked + label{
+    color: $dark-violet;
+    text-shadow: 1px 0 2px $dark-violet;
+
+    &::after {
+      opacity: 1;
+    }
+  }
+}
+
+.card-item {
+  position: relative;
+  margin-top: 30px;
+}
+
+.card-item__wrapper {
+  position: absolute;
+
+  text-align: left;
+  width: 100%;
+
+  opacity: 0;
+
+  transition: all ease-in-out 0.3s;
+
+  &.active {
+    opacity: 1;
+  }
+}
+
+.card__button {
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+
+  transform: translateX(-50%);
+}
+
+.card-item__feature-list {
+  @include reset-list();
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card-item__row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  border-bottom: 1px solid #e5e5e5;
+
+  p {
+    @include reset-text();
+
+    padding: 5px 0;
+  }
+}
+
+.card-item__table {
+  width: 100%;
+  display: flex;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.column {
+  ul {
+    @include reset-list();
+    display: flex;
+    flex-direction: column;
+    li {
+      width: 100%;
+    }
+  }
+
+  div {
+    border-bottom: 1px solid $dark-violet;
+    border-right: 1px solid $dark-violet;
+
+  }
+
+  &:nth-child(1) {
+    width: 20%;
+    border-top: 1px solid $dark-violet;
+    border-left: 1px solid$dark-violet;
+
+  }
+
+  &:nth-child(2) {
+    width: 20%;
+    border-top: 1px solid $dark-violet;
+
+  }
+
+  &:nth-child(3) {
+    width: 60%;
+    border-top: 1px solid $dark-violet;
+
+  }
+
+  div:nth-child(1) {
+    height: 60px;
+    padding-top: 20px;
+
+    color: $white;
+    font-weight: 600;
+    background-color: $orange;
+  }
+
+  div:nth-child(2) {
+    height: 120px;
+    padding-left: 20px;
+    padding-top: 10px;
+
+    color: $dark-violet;
+    font-weight: normal;
+    background-color: $white;
+    text-align: left;
+  }
+}
+
+
+@media (max-width: $desktop-width) {
+  .card-img__wrapper {
+    width: 450px;
+    height: 250px;
+  }
+
+  .card-item__table {
+    width: 100%;
+    display: flex;
+    margin-top: 0;
+    text-align: center;
+  }
+
+  .card__wrapper {
+    min-height: 700px;
+    padding: 60px 0 200px;
+  }
+}
+
+@media (max-width: $large-width) {
+  .card-images {
+    width: 100%;
+  }
+
+  .card-info {
+    width: 100%;
+
+    min-height: 350px;
+  }
+
+  .card-img__wrapper {
+    width: 600px;
+    height: 250px;
+  }
+
+  .card__wrapper {
+    min-height: 650px;
+    padding: 40px 0 200px;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .card-info {
+    width: 100%;
+
+    min-height: 350px;
+  }
+
+  .card-img__wrapper {
+    width: 320px;
+    height: 250px;
+  }
+
+  .card__wrapper {
+    padding: 60px 0 200px;
+  }
+
+  .card-images {
+    height: 300px;
+  }
+
+  .page-card {
+    min-height: 1350px;
+  }
+
+}

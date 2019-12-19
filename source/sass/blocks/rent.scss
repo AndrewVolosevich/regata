@@ -14,7 +14,7 @@
   margin-bottom: 20px;
 
   font-size: 40px;
-  font-weight: normal;
+  font-weight: bold;
   color: $dark-violet;
   text-transform: uppercase;
 }
@@ -99,24 +99,30 @@
   }
 
 
-.rent__title {
-  margin-top: 5px;
-  margin-bottom: 5px;
+  .rent__title {
+    margin-top: 5px;
+    margin-bottom: 5px;
 
-  font-size: 18px;
-  font-weight: normal;
-  color: $dark-violet;
-  text-transform: none;
-  overflow: hidden;
+    font-size: 18px;
+    font-weight: normal;
+    color: $dark-violet;
+    text-transform: none;
+    overflow: hidden;
+  }
+
+  .rent__subtitle {
+    width: 80%;
+    margin: 0 auto;
+
+    font-size: 15px;
+    font-weight: normal;
+    color: $dark-violet;
+    text-transform: none;
+  }
 }
 
-.rent__subtitle {
-  width: 80%;
-  margin: 0 auto;
-
-  font-size: 15px;
-  font-weight: normal;
-  color: $dark-violet;
-  text-transform: none;
-}
+@media (max-width: $tablet-width) {
+  .rent__header {
+    font-size: 24px;
+  }
 }

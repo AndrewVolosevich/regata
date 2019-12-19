@@ -10,6 +10,9 @@
 @import "global/container.scss";
 @import "global/page-header.scss";
 @import "global/page-footer.scss";
+@import "global/page-contacts.scss";
+@import "global/page-equipment.scss";
+@import "global/page-card.scss";
 /* blocks */
 @import "blocks/button.scss";
 @import "blocks/toggles.scss";
@@ -30,3 +33,6 @@
 @import "blocks/copyright.scss";
 @import "blocks/intro-model.scss";
 @import "blocks/advise.scss";
+@import "blocks/contacts.scss";
+@import "blocks/form.scss";
+@import "blocks/maps.scss";

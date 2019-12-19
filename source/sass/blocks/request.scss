@@ -36,3 +36,25 @@
     font-size: 34px;
   }
 }
+
+@media (max-width: $tablet-width) {
+  .request {
+    position: relative;
+
+    height: 250px;
+  }
+
+  .request__header {
+    margin: 0 10px 30px;
+
+    font-size: 22px;
+  }
+
+  .request-button {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+
+    transform: translateX(-50%);
+  }
+}

@@ -1,12 +1,18 @@
 .alloy-types {
   width: 100%;
-  padding: 40px 0;
 
-  background-color: $dark-gray;
   background: url("../img/bg-img/alloy-types--bg.jpg");
   background-repeat: no-repeat;
   background-position: 50% 100%;
   background-size: cover;
+}
+
+.alloy-types__bg-wrapper {
+  width: 100%;
+  height: 100%;
+  padding: 40px 0;
+
+  background-color: transparentize($black, 0.5);
 }
 
 .alloy-types__header {
@@ -27,7 +33,19 @@
 }
 
 .alloy-types__item {
+  position: relative;
+
   width: 24%;
+  padding-bottom: 30px;
+
+  &:hover .alloy-types__img-wrapper {
+    transform: rotateY(180deg);
+  }
+}
+
+.alloy-types__img-wrapper {
+  transition: transform 0.4s;
+  transform-style: preserve-3d;
 }
 
 .alloy-types__title {
@@ -48,17 +66,23 @@
   font-size: 17px;
 }
 
+.alloy-types__button {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+
+  transform: translateX(-50%);
+}
+
 
 @media (max-width: $desktop-width) {
-
-
+// reserved
 }
 
 
 @media (max-width: $large-width) {
-  .alloy-types {
-    width: 100%;
-    padding: 40px 0 20px;
+  .alloy-types__bg-wrapper {
+    padding: 20px 0;
   }
 
   .alloy-types__header {
@@ -87,5 +111,34 @@
     color: $white;
     font-weight: normal;
     font-size: 17px;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .alloy-types__bg-wrapper {
+    padding: 40px 0 20px;
+  }
+
+  .alloy-types__header {
+    font-size: 23px;
+  }
+
+  .alloy-types__item {
+    width: 85%;
+    margin: 0 auto 25px;
+  }
+
+  .alloy-types__title {
+    font-size: 20px;
+  }
+
+  .alloy-types__subtitle {
+    @include reset-text();
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    color: $white;
+    font-weight: normal;
+    font-size: 15px;
   }
 }

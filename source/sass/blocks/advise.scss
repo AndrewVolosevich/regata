@@ -8,13 +8,8 @@
 .advise__inner-wrapper {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   width: 100%;
-
-  &:nth-child(2n) {
-    & .advise__img-wrapper {
-      order: 2;
-    }
-  }
 }
 
 .advise__img-wrapper {
@@ -55,4 +50,22 @@
 
 .advise__button {
   margin-top: 10px;
+}
+
+@media (max-width: $large-width) {
+  .advise__img-wrapper {
+    width: 100%;
+  }
+
+  .advise__content-wrapper {
+    width: 100%;
+  }
+}
+
+.advise__inner-wrapper {
+  margin-bottom: 40px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }

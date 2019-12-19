@@ -1,13 +1,13 @@
 .advantages {
   width: 100%;
-  padding: 40px 0;
+  padding: 40px 0 20px;
 
   background-color: $white;
 }
 
 .advantages__header {
   @include reset-text();
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 
   font-size: 40px;
   font-weight: bols;
@@ -103,4 +103,27 @@
   .advantages__text {
     margin-top: 5px;
   }
+}
+
+@media (max-width: $tablet-width) {
+  .advantages__item {
+    width: 90%;
+    padding-left: 70px;
+    margin: 0 auto 20px;
+  }
+
+  .advantages__header {
+    margin: 0 15px 20px;
+
+    font-size: 26px;
+  }
+
+  .advantages__title {
+    font-size: 20px;
+  }
+
+  .advantages__text {
+    margin-top: 5px;
+  }
+
 }

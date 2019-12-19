@@ -162,6 +162,30 @@
   }
 }
 
+.card-slider {
+  width: 100%;
+
+  & .slick-prev,
+  & .slick-next {
+    opacity: 0;
+
+    transition: all ease-in-out 0.3s;
+  }
+
+  &:hover .slick-prev,
+  &:hover .slick-next {
+    opacity: 1;
+  }
+
+  .slick-prev {
+    left: 30px;
+  }
+
+  .slick-next {
+    right: 30px;
+  }
+}
+
 .slick-dots {
   .slick-active button{
     background-color: $orange;

@@ -42,6 +42,13 @@
     height: 100%;
     display: block;
   }
+
+  transition: all ease-in-out 0.4s;
+
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 4px 4px 6px 0 black;
+  }
 }
 
 .services__img-wrapper {
@@ -85,5 +92,33 @@
     margin: 10px auto 10px;
 
     font-size: 25px;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .services {
+    padding: 20px 0;
+  }
+
+  .services__header {
+    width: 90%;
+    margin: 0 auto 20px;
+
+    font-size: 22px;
+  }
+
+  .services__list {
+    justify-content: space-around;
+  }
+
+  .services__item {
+    width: 85%;
+    margin: 0 auto;
+  }
+
+  .services__title {
+    margin: 5px auto 15px;
+
+    font-size: 18px;
   }
 }

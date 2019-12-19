@@ -1,0 +1,26 @@
+.page__contacts-inner {
+  padding: 30px 0;
+}
+
+.page-contacts__communication {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+
+.page-contacts__maps {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  margin-top: 25px;
+}
+
+@media (max-width: $large-width) {
+  .page-contacts__communication {
+    flex-wrap: wrap;
+  }
+
+  .page-contacts__maps {
+    flex-wrap: wrap;
+  }
+}
