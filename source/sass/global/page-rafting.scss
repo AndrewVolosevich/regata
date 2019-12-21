@@ -1,0 +1,99 @@
+.rafting-org {
+  padding: 40px 0;
+}
+
+.rafting-org__header {
+  @include reset-text();
+
+  color: $dark-violet;
+  font-size: 40px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.rafting-org__list {
+  @include reset-list();
+}
+
+.rafting-org__item {
+  position: relative;
+
+  padding-left: 300px;
+  margin: 20px 0 30px;
+
+  text-align: left;
+
+  img {
+    position: absolute;
+    top: 50%;
+    left: 0;
+
+    width: 170px;
+    height: 170px;
+    display: block;
+
+    transform: translateY(-50%);
+  }
+}
+
+.rafting-org__title {
+  @include reset-text();
+  margin-bottom: 10px;
+
+  color: $dark-violet;
+  font-size: 30px;
+  font-weight: normal;
+  text-transform: none;
+}
+
+.rafting-org__text {
+  @include reset-text();
+
+  color: $dark-violet;
+  font-size: 17px;
+  font-weight: normal;
+  text-transform: none;
+  line-height: 1.4;
+}
+
+@media (max-width: $large-width) {
+  .rafting-org__header {
+    font-size: 34px;
+  }
+
+  .rafting-org__title {
+    font-size: 24px;
+  }
+
+  .rafting-org__item {
+    padding-left: 130px;
+
+    img {
+      width: 120px;
+      height: 120px;
+    }
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .rafting-org__header {
+    font-size: 26px;
+  }
+
+  .rafting-org__item {
+    padding-left: 0;
+    padding-top: 100px;
+
+    text-align: center;
+
+    img {
+      top: -20px;
+      left: 50%;
+
+      width: 120px;
+      height: 120px;
+
+      transform: translateX(-50%) translateY(0);
+    }
+  }
+}

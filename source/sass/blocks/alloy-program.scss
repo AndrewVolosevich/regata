@@ -1,0 +1,85 @@
+.alloy-program {
+  padding: 40px 0;
+}
+
+.alloy-program__header {
+  @include reset-text();
+  margin-bottom: 30px;
+
+  font-size: 40px;
+  font-weight: bold;
+  color: $dark-violet;
+  text-transform: uppercase;
+}
+
+.alloy-program__list {
+  @include reset-list();
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 33%;
+  margin: 0 auto;
+}
+
+.alloy-program__item {
+  margin: 5px 0;
+
+  text-align: left;
+
+  p {
+    @include reset-text();
+
+    &:first-child {
+      display: inline-block;
+      margin-right: 20px;
+
+      font-weight: 700;
+      font-size: 18px;
+    }
+
+    &:last-child {
+      display: inline-block;
+      font-size: 18px;
+    }
+  }
+}
+
+@media (max-width: $large-width) {
+  .alloy-program__list {
+    width: 100%;
+
+    li {
+      text-align: center;
+    }
+  }
+
+  .alloy-program__header {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .alloy-program__item {
+    margin-bottom: 10px;
+
+    p {
+      &:first-child {
+        display: block;
+        margin-right: 17px;
+
+        font-weight: 700;
+        font-size: 18px;
+      }
+
+      &:last-child {
+        display: block;
+        font-size: 15px;
+      }
+    }
+  }
+
+  .alloy-program__header {
+    font-size: 23px;
+  }
+}

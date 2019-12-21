@@ -1,0 +1,57 @@
+.inventory {
+  width: 100%;
+  padding: 40px 0;
+
+  background-color: $gray;
+}
+
+.inventory__header {
+  @include reset-text();
+  margin-bottom: 20px;
+
+  font-size: 40px;
+  font-weight: bold;
+  color: $dark-violet;
+  text-transform: uppercase;
+}
+
+.inventory__inner-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.inventory__content {
+  width: 48%;
+
+  text-align: left;
+}
+
+.inventory__title {
+  @include reset-text();
+  margin-bottom: 10px;
+
+  font-size: 30px;
+  font-weight: normal;
+  color: $dark-violet;
+  text-transform: none;
+}
+
+.inventory__text {
+  line-height: 1.5;
+}
+
+@media (max-width: $large-width) {
+  .inventory__content {
+    width: 100%;
+  }
+
+  .inventory__header {
+    font-size: 34px;
+  }
+
+  .inventory__title {
+    font-size: 24px;
+    margin-top: 10px;
+  }
+}

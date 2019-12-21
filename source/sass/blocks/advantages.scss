@@ -10,9 +10,19 @@
   margin-bottom: 30px;
 
   font-size: 40px;
-  font-weight: bols;
+  font-weight: bold;
   color: $dark-violet;
   text-transform: uppercase;
+}
+
+.advantages__subheader {
+  @include reset-text();
+  margin-bottom: 30px;
+
+  font-size: 17px;
+  font-weight: normal;
+  color: $dark-violet;
+  text-transform: lowercase;
 }
 
 .advantages__list {

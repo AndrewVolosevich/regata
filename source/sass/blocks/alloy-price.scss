@@ -1,0 +1,97 @@
+.alloy-price {
+  padding: 40px 0;
+  background-color: $white;
+}
+
+.alloy-price__header {
+  @include reset-text();
+  margin-bottom: 20px;
+
+  font-size: 40px;
+  font-weight: bold;
+  color: $dark-violet;
+  text-transform: uppercase;
+}
+
+.alloy-price__inner-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  div {
+    width: 33%;
+    margin-bottom: 20px;
+
+    text-align: left;
+
+    &:nth-child(2),
+    &:nth-child(3) {
+      padding-left: 30px;
+    }
+  }
+
+  ul {
+    @include reset-list();
+  }
+
+  li {
+    position: relative;
+
+    margin: 5px 0;
+    padding-left: 20px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 50%;
+
+      width: 6px;
+      height: 6px;
+      background-color: $orange;
+
+      border-radius: 50%;
+      transform: translateY(-50%);
+    }
+  }
+}
+
+.alloy-price__title {
+  @include reset-text();
+  margin-bottom: 10px;
+
+  font-size: 30px;
+  font-weight: normal;
+  color: $dark-violet;
+  text-transform: none;
+}
+
+@media (max-width: $large-width) {
+  .alloy-price__inner-wrapper {
+    div {
+      width: 100%;
+
+      text-align: left;
+
+      &:nth-child(2),
+      &:nth-child(3) {
+        padding-left: 30px;
+      }
+    }
+
+    ul {
+    }
+
+    li {
+      }
+  }
+
+  .alloy-price__header {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .alloy-price__header {
+    font-size: 26px;
+  }
+}
