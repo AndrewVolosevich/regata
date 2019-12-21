@@ -30,13 +30,6 @@
   text-align-last: left;
 }
 
-
-@media (max-width: $desktop-width) {
-
-
-}
-
-
 @media (max-width: $large-width) {
   .page-footer__inner-wrapper {
     flex-wrap: wrap;
@@ -51,6 +44,7 @@
   .page-footer {
     padding-bottom: 10px;
   }
+
   .page-footer__nav {
     display: none;
   }

@@ -1,5 +1,4 @@
 @import "libs/normalize.scss";
-
 /* baze */
 @import "base/typography.scss";
 @import "base/variables.scss";
@@ -17,16 +16,13 @@
 @import "global/page-route.scss";
 /* blocks */
 @import "blocks/button.scss";
-@import "blocks/toggles.scss";
 @import "blocks/site-nav.scss";
 @import "blocks/main-nav.scss";
-
 @import "blocks/intro.scss";
 @import "blocks/slider.scss";
 @import "blocks/services.scss";
 @import "blocks/alloy-types.scss";
 @import "blocks/advantages.scss";
-@import "blocks/routes.scss";
 @import "blocks/routes.scss";
 @import "blocks/request.scss";
 @import "blocks/rent.scss";
@@ -36,7 +32,6 @@
 @import "blocks/intro-model.scss";
 @import "blocks/advise.scss";
 @import "blocks/contacts.scss";
-@import "blocks/form.scss";
 @import "blocks/maps.scss";
 @import "blocks/alloy-program.scss";
 @import "blocks/annotation.scss";

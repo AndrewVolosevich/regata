@@ -17,6 +17,7 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+
   div {
     width: 33%;
     margin-bottom: 20px;
@@ -77,12 +78,6 @@
         padding-left: 30px;
       }
     }
-
-    ul {
-    }
-
-    li {
-      }
   }
 
   .alloy-price__header {

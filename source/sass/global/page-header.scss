@@ -39,11 +39,6 @@
   }
 }
 
-@media (max-width: $desktop-width) {
-
-}
-
-
 @media (max-width: $large-width) {
   .page-header__toggle {
     @include reset-button();
@@ -60,11 +55,13 @@
         &::before {
           transform-origin: 0% 0%;
           transform: rotate(45deg);
+          top: -12px;
         }
 
         &::after {
           transform-origin: 0% 100%;
           transform: rotate(-45deg);
+          top: 8px;
         }
       }
     }
@@ -107,16 +104,6 @@
       background-color: $white;
 
       transition: all ease-in-out 0.5s;
-    }
-
-    &::after {
-      top: 8px;
-    }
-  }
-
-  .page-header__toggle--active .page-header__toggle-line {
-    &::before {
-      top: -12px;
     }
 
     &::after {

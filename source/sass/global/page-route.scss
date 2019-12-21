@@ -1,5 +1,9 @@
 .page-route__inner-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
   padding: 40px 0;
+
   background-color: $white;
 }
 
@@ -12,12 +16,6 @@
   color: $dark-violet;
   text-transform: none;
   text-align: left;
-}
-
-.page-route__inner-wrapper {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
 }
 
 .page-route__slider {

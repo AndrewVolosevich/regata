@@ -78,7 +78,7 @@
     font-size: 12px;
     text-align: left;
 
-    transform: scale(0.7);
+    transform: scale(0.8);
 
     &::after {
       display: none;
@@ -102,7 +102,7 @@
     }
 
     &:hover {
-      transform: scale(0.8);
+      transform: scale(0.9);
 
       &::before {
         background-color: $white;
@@ -143,7 +143,6 @@
   .site-subnav {
     top: 40px;
   }
-
 }
 
 @media (max-width: $large-width) {
@@ -179,6 +178,7 @@
 
     a {
       text-align: left;
+
       &::before {
         left: -50px;
       }

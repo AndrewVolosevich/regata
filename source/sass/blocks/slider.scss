@@ -41,7 +41,7 @@
     background-color: transparentize($black, 0.2);
   }
 
-  &:before {
+  &::before {
     content: "";
     position: absolute;
     z-index: 10;
@@ -62,19 +62,19 @@
 
     &:hover,
     &:active,
-    &:focus{
+    &:focus {
       border-color: $orange;
     }
   }
 
-  &:hover:before,
-  &:active:before {
+  &:hover::before,
+  &:active::before {
     border: 3px solid $orange;
     border-top: none;
     border-right: none;
   }
 
-  &:after {
+  &::after {
     display: none;
   }
 }
@@ -106,7 +106,7 @@
     background-color: transparentize($black, 0.2);
   }
 
-  &:before {
+  &::before {
     content: "";
     position: absolute;
     z-index: 10;
@@ -126,14 +126,14 @@
     transition: all ease-in-out 0.3s;
   }
 
-  &:hover:before,
-  &:active:before {
+  &:hover::before,
+  &:active::before {
     border: 3px solid $orange;
     border-top: none;
     border-right: none;
   }
 
-  &:after {
+  &::after {
     display: none;
   }
 }
@@ -211,7 +211,7 @@
 }
 
 .slick-dots {
-  .slick-active button{
+  .slick-active button {
     background-color: $orange;
 
     outline: none;
@@ -224,6 +224,7 @@
 
   li {
     display: inline-block;
+
     button {
       display: block;
       width: 12px;
@@ -243,7 +244,6 @@
       &:hover {
         background-color: $orange;
       }
-
     }
   }
 }

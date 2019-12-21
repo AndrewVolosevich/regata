@@ -4,7 +4,7 @@
 
 .alloy-program__header {
   @include reset-text();
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 
   font-size: 40px;
   font-weight: bold;
@@ -17,10 +17,15 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  flex-direction: column;
-  width: 33%;
+  flex-direction: row;
+  width: 100%;
   margin: 0 auto;
 }
+
+.alloy-program__item-wrapper {
+  width: 33%;
+}
+
 
 .alloy-program__item {
   margin: 5px 0;
@@ -45,6 +50,16 @@
   }
 }
 
+.alloy-program__title {
+  @include reset-text();
+  margin-bottom: 15px;
+
+  font-size: 30px;
+  font-weight: bold;
+  color: $dark-violet;
+  text-transform: uppercase;
+}
+
 @media (max-width: $large-width) {
   .alloy-program__list {
     width: 100%;
@@ -56,6 +71,10 @@
 
   .alloy-program__header {
     font-size: 35px;
+  }
+
+  .alloy-program__item-wrapper {
+    width: 100%;
   }
 }
 

@@ -60,12 +60,12 @@
   .advise__content-wrapper {
     width: 100%;
   }
-}
 
-.advise__inner-wrapper {
-  margin-bottom: 40px;
+  .advise__inner-wrapper {
+    margin-bottom: 40px;
 
-  &:last-child {
-    margin-bottom: 0;
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 }

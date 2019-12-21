@@ -74,12 +74,6 @@
   transform: translateX(-50%);
 }
 
-
-@media (max-width: $desktop-width) {
-// reserved
-}
-
-
 @media (max-width: $large-width) {
   .alloy-types__bg-wrapper {
     padding: 20px 0;
@@ -92,7 +86,6 @@
   .alloy-types__item {
     width: 47%;
     margin-bottom: 20px;
-
   }
 
   .alloy-types__title {

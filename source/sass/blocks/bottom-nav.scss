@@ -10,10 +10,19 @@
     font-size: 17px;
     font-weight: normal;
 
+
     transition: all ease-in-out 0.3s;
 
     &:hover {
+      transform: scale(0.8);
+
       color: $white;
+
+      &::before {
+        background-color: $white;
+
+        left: -13px;
+      }
     }
 
     &::before {
@@ -31,16 +40,6 @@
 
       transform: translateY(-50%);
       transition: all ease-in-out 0.3s;
-    }
-
-    &:hover {
-      transform: scale(0.8);
-
-      &::before {
-        background-color: $white;
-
-        left: -13px;
-      }
     }
   }
 }

@@ -1,11 +1,10 @@
-
-$(document).ready(function(){
+$(document).ready(function () {
   $('.slider').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
-    arrows:	true,
+    arrows: true,
   });
 
   $('.rent-slider').slick({
@@ -13,16 +12,14 @@ $(document).ready(function(){
     slidesToScroll: 2,
     autoplay: true,
     autoplaySpeed: 4000,
-    arrows:	true,
+    arrows: true,
     dots: true,
-    responsive: [
-	    {
-	      breakpoint: 659,
-	      settings: {
-	        slidesToShow: 2,
-	      }
-	    }
-    ]
+    responsive: [{
+      breakpoint: 659,
+      settings: {
+        slidesToShow: 2,
+      }
+    }]
   });
 
   $('.card-slider').slick({
@@ -30,15 +27,15 @@ $(document).ready(function(){
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
-    arrows:	true,
+    arrows: true,
     dots: true,
-/*     responsive: [
-	    {
-	      breakpoint: 659,
-	      settings: {
-	        slidesToShow: 2,
-	      }
-	    }
-    ] */
+    /*     responsive: [
+    	    {
+    	      breakpoint: 659,
+    	      settings: {
+    	        slidesToShow: 2,
+    	      }
+    	    }
+        ] */
   });
 });
