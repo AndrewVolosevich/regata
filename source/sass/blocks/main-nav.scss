@@ -24,6 +24,12 @@
   }
 }
 
+.number-wrapper {
+  .main-nav__number {
+    margin: 0 auto;
+  }
+}
+
 @media (max-width: $desktop-width) {
   .main-nav {
     width: 800px;

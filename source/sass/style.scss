@@ -1,4 +1,5 @@
 @import "libs/normalize.scss";
+@import "libs/slick.scss";
 /* baze */
 @import "base/typography.scss";
 @import "base/variables.scss";
@@ -7,6 +8,7 @@
 @import "global/global.scss";
 @import "global/visually-hidden.scss";
 @import "global/container.scss";
+@import "global/popup.scss";
 @import "global/page-header.scss";
 @import "global/page-footer.scss";
 @import "global/page-contacts.scss";
@@ -15,7 +17,6 @@
 @import "global/page-rafting.scss";
 @import "global/page-route.scss";
 /* blocks */
-@import "blocks/button.scss";
 @import "blocks/site-nav.scss";
 @import "blocks/main-nav.scss";
 @import "blocks/intro.scss";
@@ -39,3 +40,4 @@
 @import "blocks/table.scss";
 @import "blocks/inventory.scss";
 @import "blocks/additional-services.scss";
+@import "blocks/button.scss";

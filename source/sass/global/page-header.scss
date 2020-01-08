@@ -9,6 +9,7 @@
   color: $white;
 
   background-color: transparentize($black, 0.1);
+  box-shadow: 0 2px 3px 2px $black;
 }
 
 .page-header__inner-wrapper {

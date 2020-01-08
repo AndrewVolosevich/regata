@@ -187,30 +187,44 @@
 
           <section class="contacts__form form">
             <h3 class="contacts__title">Обратная связь</h3>
-            <form class="contacts__form--feedback" method="post" action="https://echo.htmlacademy.ru">
-                <ul class="contacts__list contacts__list--form">
-                  <li>
-                    <label for="user-surname">Имя*</label>
-                    <input id="user-surname" type="text" name="surname" value="" placeholder="Укажите имя *">
-                  </li>
-                  <li>
-                    <label for="user-email">Почта*</label>
-                    <input id="user-email" type="text" name="email" value="" aria-label="Введите вашу почту" placeholder="Введите почту *">
-                  </li>
-                  <li>
-                    <label for="user-textarea">Сообщение*</label>
-                    <textarea id="user-textarea" name="textarea" aria-label="Введите текст сообщения в свободной форме" placeholder=""></textarea>
-                  </li>
-                </ul><!-- end  .contest__list--fullname -->
+            <div role="form" class="wpcf7" id="wpcf7-f207-o1" lang="ru-RU" dir="ltr">
+              <form action="/%d0%ba%d0%be%d0%bd%d1%82%d0%b0%d0%ba%d1%82%d1%8b/#wpcf7-f207-o1" method="post" class="wpcf7-form"
+                novalidate="novalidate">
 
-                <p class="form__text">
-                  * — обязательные для заполнения поля
+                <p>
+                  <label> Ваше имя (обязательно)<br>
+                    <span class="wpcf7-form-control-wrap user-name">
+                      <input type="text" name="user-name" value="" size="40"
+                        class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required field" id="user-name" aria-required="true"
+                        aria-invalid="false" placeholder="Укажите имя">
+                    </span>
+                  </label>
                 </p>
-
-              <div class="contacts__button-wrapper">
-                <button class="contacts__button button" type="submit">Отправить</button>
-              </div>
-            </form><!-- end  .contest__form -->
+                <p>
+                  <label> Ваша почта (обязательно)<br>
+                    <span class="wpcf7-form-control-wrap user-email">
+                      <input type="email" name="user-email" value="" size="40"
+                        class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email field"
+                        id="user-email" aria-required="true" aria-invalid="false" placeholder="Введите почту">
+                    </span>
+                  </label>
+                </p>
+                <p>
+                  <label> Сообщение<br>
+                    <span class="wpcf7-form-control-wrap user-teaxtarea">
+                      <textarea name="user-teaxtarea" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea field"
+                        id="user-teaxtarea" aria-invalid="false" placeholder="Любое сообщение"></textarea>
+                    </span>
+                  </label>
+                </p>
+                <p>
+                  <input type="submit" value="Отправить" class="wpcf7-form-control wpcf7-submit button"
+                    id="form_button">
+                  <span class="ajax-loader"></span>
+                </p>
+                <div class="wpcf7-response-output wpcf7-display-none"></div>
+              </form>
+            </div>
           </section>
         </div>
 

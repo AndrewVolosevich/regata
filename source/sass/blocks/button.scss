@@ -1,23 +1,54 @@
 .button {
   position: relative;
+  z-index: 1;
 
   display: inline-block;
   vertical-align: top;
-  padding: 0 20px;
+  padding: 3px 25px;
   width: auto;
 
-
+  text-align: center;
+  text-decoration: none;
   color: $white;
   text-transform: uppercase;
   font-size: 11px;
   font-weight: normal;
   line-height: 28px;
 
+  border-radius: 4px;
+  overflow: hidden;
   background-color: $orange;
 
-  transition: all ease-in-out 0.3s;
+  &:after,
+  &:before {
+    content: '';
+    position: absolute;
+    left: -50%;
+    right: -50%;
+    height: 0;
+    padding-bottom: 200%;
+    background: $dark-orange;
+    mix-blend-mode: color-burn;
+    top: 0;
+    z-index: -1;
+    border-radius: 230px;
+    transition: transform 1s, background 1s;
+  }
 
-  &:hover {
-    background-color: $dark-orange;
+  &:after {
+    transform: translate3d(-5%,6em,0) rotate(-45deg);
+  }
+
+  &:before {
+    transform: translate3d(5%,6em,0) rotate(0deg);
+  }
+
+  &:hover,
+  &:focus {
+    &:before,
+    &:after {
+      transform: translate3d(0,-5em,0) rotate(180deg);
+      background: $dark-orange;
+    }
   }
 }

@@ -26,59 +26,58 @@
 .contacts__list {
   @include reset-list();
 
-  &--form {
-    textarea {
-      width: 100%;
-      height: 100px;
-      padding-left: 20px;
-      padding-top: 10px;
-      margin-top: 10px;
-      resize: none;
-
-      text-align: left;
-      line-height: 1.7;
-
-      border: 1px solid #e5e5e5;
-      transition: all ease-in-out 0.3s;
-
-      &:hover {
-        border-color: $orange;
-      }
-
-      &:focus,
-      &:active {
-        border-color: $dark-orange;
-      }
-    }
-
-    label {
-      display: block;
-      margin: 8px 0 8px;
-    }
-
-    input {
-      width: 100%;
-      height: 40px;
-      padding: 0 0 0 22px;
-      display: block;
-      margin: 0 auto;
-
-      border: 1px solid #e5e5e5;
-      outline: none;
-
-      transition: all ease-in-out 0.3s;
-
-      &:hover {
-        border-color: $orange;
-      }
-
-      &:focus {
-        border-color: $dark-orange;
-      }
-    }
+  .main-nav__number {
+    display: inline-block;
   }
 }
 
+.form {
+  @include reset-submit-button();
+
+  form {
+    width: 90%;
+    border-collapse: collapse;
+  }
+
+  label {
+    width: 100%;
+
+    outline: none;
+    background-color: $white;
+
+    outline: none;
+    box-shadow: none;
+    overflow: hidden;
+    }
+
+
+  input {
+    width: 100%;
+    height: 40px;
+    padding-left: 10px;
+
+    outline: none;
+    overflow: hidden;
+    outline-offset: 0;
+    box-shadow: none;
+    background-color: $white;
+  }
+
+  textarea {
+    width: 100%;
+    height: 130px;
+    padding: 10px;
+    resize: none;
+    outline: none;
+  }
+}
+
+.popup__form {
+  form {
+    width: 70%;
+    margin: 0 auto;
+  }
+}
 .contacts__list-wrapper {
   width: 100%;
   margin-bottom: 20px;
@@ -101,6 +100,15 @@
 
     svg {
       fill: $orange;
+
+      transition: all ease-in-out 0.3s;
+    }
+  }
+
+  a:hover,
+  a:active {
+    svg {
+      fill: $dark-violet;
     }
   }
 }
@@ -114,31 +122,6 @@
 .contacts__item {
   a {
     padding-left: 0;
-  }
-}
-
-.contacts__button {
-  @include reset-button();
-  position: relative;
-
-  display: inline-block;
-  vertical-align: top;
-  padding: 0 20px;
-  width: auto;
-
-
-  color: $white;
-  text-transform: uppercase;
-  font-size: 11px;
-  font-weight: normal;
-  line-height: 28px;
-
-  background-color: $orange;
-
-  transition: all ease-in-out 0.3s;
-
-  &:hover {
-    background-color: $dark-orange;
   }
 }
 
